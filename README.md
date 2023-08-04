@@ -9,8 +9,8 @@ To use this project, follow the steps below:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/<username>/<repository>.git
-cd <repository>
+git clone https://github.com/tdwan100/FaceEmotionDetection.git
+cd FaceEmotionDetection
 ```
 
 2. Install the required dependencies:
@@ -32,10 +32,10 @@ python facerec.py
 ```
 
 This script will perform the following steps:
-- Read the `fer2013.csv` file.
+- Read the `fer2013.csv` file available here https://www.kaggle.com/datasets/msambare/fer2013.
 - Extract the facial expression data and labels.
-- Normalize and save the features in `fdataX.npy`.
-- Save the labels in one-hot encoded format in `flabels.npy`.
+- Normalize and save the features in `dataX.npy`.
+- Save the labels in one-hot encoded format in `labels.npy`.
 
 ## Training the Model
 
@@ -48,7 +48,7 @@ python facerec.py
 ```
 
 This script will:
-- Load the preprocessed data from `fdataX.npy` and `flabels.npy`.
+- Load the preprocessed data from `dataX.npy` and `labels.npy`.
 - Split the data into training, validation, and testing sets.
 - Design and compile the CNN model using the Adam optimizer and categorical crossentropy loss.
 - Train the model using the training data and validate it on the validation set.
