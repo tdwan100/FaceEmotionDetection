@@ -1,5 +1,7 @@
 # Facial Emotion Recognition
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This repository contains a facial emotion recognition project implemented using Convolutional Neural Networks (CNNs). The project is written in Python using the Keras library for building and training the deep learning model.
 
 ## Getting Started
@@ -8,14 +10,14 @@ To use this project, follow the steps below:
 
 1. Clone the repository:
 
-```bash
+```
 git clone https://github.com/tdwan100/FaceEmotionDetection.git
 cd FaceEmotionDetection
 ```
 
 2. Install the required dependencies:
 
-```bash
+```
 pip install pandas numpy scikit-learn keras opencv-python
 ```
 
@@ -27,7 +29,7 @@ The first step in the project is to preprocess the dataset. The script `facerec.
 
 To preprocess the dataset, run:
 
-```bash
+```
 python facerec.py
 ```
 
