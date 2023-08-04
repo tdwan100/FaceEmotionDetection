@@ -31,8 +31,8 @@ X = np.expand_dims(X, -1)
 y = pd.get_dummies(data['emotion'].values)
 
 #storing them using numpy
-np.save('fdataX', X)
-np.save('flabels', y)
+np.save('dataX', X)
+np.save('labels', y)
 
 print("Preprocessing Done")
 print("Number of Features: "+str(len(X[0])))
@@ -46,8 +46,8 @@ batch_size = 64
 epochs = 100
 width, height = 48, 48
 
-x = np.load('./fdataX.npy')
-y = np.load('./flabels.npy')
+x = np.load('./dataX.npy')
+y = np.load('./labels.npy')
 
 x -= np.mean(x, axis=0)
 x /= np.std(x, axis=0)
